@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css">
+    <div class="container">
+        <h1>Attendance List</h1>
+        <form id="attendance-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" required>
+            
+            <label for="attendance-status">Attendance Status:</label>
+            <select id="attendance-status">
+                <option value="present">Present</option>
+                <option value="absent">Absent</option>
+            </select>
+            
+            <button type="submit">Add Student</button>
+        </form>
+        <ul id="student-list"></ul>
+    </div>
+    <script  src="./app.js"></script>
+    <script src="./confiq.js"></script>
+</body>
+</html>
